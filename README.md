@@ -30,3 +30,6 @@ In the end of this file add this line 'server LP025 prefer iburst'
 (LP025 is name of my PC. For you it would change)
 7) sudo systemctl restart ntp
 8) ntpq -p
+
+Check Time on both terminals by command 'date'
+Should be same :)
