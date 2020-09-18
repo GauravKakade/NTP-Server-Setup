@@ -3,24 +3,24 @@
 
 Use this site for Reference :- *https://www.tecmint.com/install-ntp-server-and-client-on-ubuntu/*
 
-**Steps in the Host PC:**
+##Steps in the Host PC:
 1) sudo apt update -y
 2) sudo apt install ntp 
 3) sntp --version
 4) Now on terminal goto 'sudo nano /etc/ntp.conf' and on this file we need to replace some lines.
 from https://www.pool.ntp.org/zone/de you will get the ntp server details for Germany. Copy these 4 lines and paste them instead of the previous ntp servers list.
 
-*server 0.de.pool.ntp.org
-*server 1.de.pool.ntp.org
-*server 2.de.pool.ntp.org
-*server 3.de.pool.ntp.org
+server 0.de.pool.ntp.org
+server 1.de.pool.ntp.org
+server 2.de.pool.ntp.org
+server 3.de.pool.ntp.org
 
 5) sudo systemctl restart ntp
 6) sudo systemctl status ntp
 7) sudo ufw allow ntp 
-* Note - No need of Firewall commands *
+**Note - No need of Firewall commands** 
 
-**Steps in the Client (Turtlebot):** 
+##Steps in the Client (Turtlebot): 
 (All steps can be done with ssh also)
 1) sudo apt update -y
 2) sudo apt install ntpdate
@@ -37,5 +37,5 @@ In the end of this file add this line 'server LP025 prefer iburst'
 7) sudo systemctl restart ntp
 8) ntpq -p
 
-Check Time on both terminals by command 'date'
+Check time on both terminals by command 'date'
 Should be same :)
