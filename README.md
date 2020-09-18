@@ -10,8 +10,7 @@ Use this site for Reference :- *https://www.tecmint.com/install-ntp-server-and-c
 4) Now on terminal goto 'sudo nano /etc/ntp.conf' and on this file we need to replace some lines.
 from https://www.pool.ntp.org/zone/de you will get the ntp server details for Germany. Copy these 4 lines and paste them instead of the previous ntp servers list.
 
-server 0.de.pool.ntp.org
-server 1.de.pool.ntp.org
+server 0.de.pool.ntp.org  server 1.de.pool.ntp.org
 server 2.de.pool.ntp.org
 server 3.de.pool.ntp.org
 
