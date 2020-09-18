@@ -3,7 +3,7 @@
 
 Use this site for Reference :- *https://www.tecmint.com/install-ntp-server-and-client-on-ubuntu/*
 
-##Steps in the Host PC:
+**Steps in the Host PC:**
 1) sudo apt update -y
 2) sudo apt install ntp 
 3) sntp --version
@@ -17,10 +17,11 @@ server 3.de.pool.ntp.org
 
 5) sudo systemctl restart ntp
 6) sudo systemctl status ntp
-7) sudo ufw allow ntp 
+7) sudo ufw allow ntp
+
 **Note - No need of Firewall commands** 
 
-##Steps in the Client (Turtlebot): 
+**Steps in the Client (Turtlebot):** 
 (All steps can be done with ssh also)
 1) sudo apt update -y
 2) sudo apt install ntpdate
